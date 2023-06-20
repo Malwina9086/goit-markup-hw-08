@@ -1,0 +1,32 @@
+.lorem {
+  display: flex;
+  gap: 30px;
+
+  &__block {
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__h2 {
+    color: #212121;
+    font-size: 14px;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__paragraph {
+    color: #757575;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+  }
+}

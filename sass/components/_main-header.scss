@@ -1,3 +1,7 @@
+.display {
+  display: none;
+}
+
 .header-main {
   border-bottom: 1px solid #ececec;
 
@@ -19,10 +23,34 @@
     color: #000000;
   }
 
+  &__hamburger {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__hamburger:hover,
+  &__hamburger:focus {
+    fill: #2196f3;
+  }
+
   &__nav {
-    display: flex;
-    column-gap: 46px;
-    padding: 31px 0;
+    display: none;
+    @include tablet {
+      display: flex;
+      gap: 46px;
+    }
+
+    @include desktop {
+      display: flex;
+      column-gap: 46px;
+      padding: 31px 0;
+    }
   }
 
   &__link {
@@ -73,9 +101,19 @@
   }
 
   &__contact {
-    display: flex;
-    margin-left: auto;
-    gap: 50px;
+    display: none;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    @include desktop {
+      display: flex;
+      margin-left: auto;
+      gap: 50px;
+    }
   }
 
   &__list {

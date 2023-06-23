@@ -1,15 +1,33 @@
 .our-job {
-  display: flex;
-  gap: 30px;
+  display: none;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: flex;
+    gap: 30px;
+  }
 
   &__h2 {
-    color: #212121;
-    font-size: 36px;
-    line-height: 1.2;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    display: none;
+
+    @include tablet {
+      display: none;
+    }
+
+    @include desktop {
+      display: flex;
+      justify-content: center;
+      color: #212121;
+      font-size: 36px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin-bottom: 50px;
+    }
   }
 
   &__img {

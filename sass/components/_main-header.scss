@@ -1,9 +1,14 @@
-.display {
-  display: none;
-}
-
 .header-main {
   border-bottom: 1px solid #ececec;
+  padding: 10px 0;
+
+  @include tablet {
+    padding: 21px 0;
+  }
+
+  @include desktop {
+    padding: 24px 0 25px;
+  }
 
   &__wrapper {
     display: flex;
@@ -23,33 +28,38 @@
     color: #000000;
   }
 
-  &__hamburger {
+  &__toggle {
     background-color: transparent;
     border: none;
     cursor: pointer;
     position: absolute;
+    top: 22px;
+    right: 22px;
 
     @include tablet {
       display: none;
     }
   }
 
-  &__hamburger:hover,
-  &__hamburger:focus {
+  &__toggle:hover,
+  &__toggle:focus {
     fill: #2196f3;
   }
 
   &__nav {
     display: none;
+
     @include tablet {
       display: flex;
+      margin-left: 83px;
       gap: 46px;
+      margin-right: auto;
     }
 
     @include desktop {
       display: flex;
+      margin-left: 93px;
       column-gap: 46px;
-      padding: 31px 0;
     }
   }
 

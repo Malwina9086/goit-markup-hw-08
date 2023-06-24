@@ -13,6 +13,7 @@
   &__wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-around;
   }
 
   &__logo {
@@ -32,22 +33,12 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    position: absolute;
     top: 22px;
     right: 22px;
-
-    @include tablet {
-      display: none;
+    &:hover,
+    &:focus {
+      fill: #2196f3;
     }
-  }
-
-  &__toggle:hover,
-  &__toggle:focus {
-    fill: #2196f3;
-  }
-
-  &__nav {
-    display: none;
 
     @include tablet {
       display: flex;
@@ -63,6 +54,15 @@
     }
   }
 
+  &__nav {
+    display: none;
+    @include desktop {
+      display: flex;
+      column-gap: 46px;
+      padding: 31px 0;
+    }
+  }
+
   &__link {
     color: #212121;
     font-weight: 500;
@@ -73,11 +73,10 @@
     &--current {
       color: #2196f3;
     }
-  }
-
-  &__link:hover,
-  &__link:focus {
-    color: #2196f3;
+    &:hover,
+    &:focus {
+      color: #2196f3;
+    }
   }
 
   &__underscore {

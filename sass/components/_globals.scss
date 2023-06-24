@@ -68,6 +68,10 @@ footer {
 
 nav {
   margin-left: 93px;
+
+  @include tablet {
+    margin-left: 83px;
+  }
 }
 
 .work {

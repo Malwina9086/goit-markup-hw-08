@@ -30,11 +30,11 @@
         >
          <button
             type="button"
-            class="header-main__toggle js-open-menu"
+            class="header-main__toggle js-open-menu is-open"
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
-            <svg class="menu-toggle__button" width="30px" height="30px">
+            <svg class="header-main__hamburger" width="30px" height="30px">
               <use href="./images/icons.svg/menu-mobile(1).svg#icon-menu-mobile"></use>
             </svg>
           </button>
@@ -197,12 +197,16 @@
           <ul class="our-team__block">
             <li class="our-team__frame">
               <img
-                src="./images/team1-desktopx1.jpg"
+                src="./images/img(1).jpg"
                 alt="smiling man"
                 width="270"
                 height="260"
-                srcset=""
-              
+                 srcset="images/images/img(1).jpg. x1,
+                    images/img(1)desktopx2.jpg x2,
+                    images/img(1)tabletx1.jpg  x1,
+                    images/img(1)tabletx2.jpg  x2,
+                    images/img(1)mobilex1.jpg  x1,
+                    images/img(1)mobilex2.jpg  x2"
               />
               <div class="our-team__under--photo">
                 <h3 class="our-team__name">John Doe</h3>
@@ -271,6 +275,12 @@
                 alt="blond woman smiling"
                 width="270"
                 height="260"
+                  srcset="./images/img(2).jpg. x1,
+                    ./images/img(2)desktopx2.jpg x2,
+                    ./images/img(2)tabletx1.jpg  x1,
+                    ./images/img(2)tabletx2.jpg  x2,
+                    ./images/img(2)mobilex1.jpg  x1,
+                    ./images/img(2)mobilex2.jpg  x2"
               />
               <div class="our-team__under--photo">
                 <h3 class="our-team__name">John Doe</h3>
@@ -338,6 +348,12 @@
                 alt="smiling man"
                 width="270"
                 height="260"
+                  srcset="images/images/img(3).jpg. x1,
+                    ./images/img(3)desktopx2.jpg x2,
+                    ./images/img(3)tabletx1.jpg  x1,
+                    ./images/img(3)tabletx2.jpg  x2,
+                    ./images/img(3)mobilex1.jpg  x1,
+                    ./images/img(3)mobilex2.jpg  x2"
               />
               <div class="our-team__under--photo">
                 <h3 class="our-team__name">John Doe</h3>
@@ -406,6 +422,12 @@
                 alt="man with glasses"
                 width="270"
                 height="260"
+                  srcset="./images/img(4).jpg. x1,
+                    ./images/img(4)desktopx2.jpg x2,
+                    ./images/img(4)tabletx1.jpg  x1,
+                    ./images/img(4)tabletx2.jpg  x2,
+                    ./images/img(4)mobilex1.jpg  x1,
+                    ./images/img(4)mobilex2.jpg  x2"
               />
               <div class="our-team__under--photo">
                 <h3 class="our-team__name">John Doe</h3>
@@ -639,8 +661,7 @@
     </div>
     </footer>
 
-     <div class="menu-container js-menu-container"
-            id="mobile-menu">
+     <div class="menu-container js-menu-container" id="mobile-menu">
             <button
               type="button"
               class="menu-container__close--btn js-close-menu"
@@ -649,26 +670,26 @@
                 <use href="./images/icons.svg/close-icon.svg#icon-Vector"></use>
               </svg>
             </button>
-            <ul class="block">
-              <li>
-                <a href="index.html" class="block__link">Agencja</a>
+            <ul class="mobile-menu">
+              <li class="mobile-menu__list">
+                <a href="index.html" class="mobile-menu__link mobile-menu__link--accent">Agencja</a>
               </li>
-              <li>
-                <a href="portfolio.html" class="block__link">Portfolio</a>
+              <li class="mobile-menu__list">
+                <a href="portfolio.html" class="mobile-menu__link">Portfolio</a>
               </li>
-              <li>
-                <a href="index.html" class="block__link">Kontakt</a>
+              <li class="mobile-menu__list">
+                <a href="index.html" class="mobile-menu__link">Kontakt</a>
               </li>
             </ul>
          
-              <div class="block__contacts">
+              <div class="block-contact">
              
-                  <a href="tel:+48 111 111 111" class="block__contacts--link"
+                  <a href="tel:+48 111 111 111" class="block-contact__tel"
                     >+48 111 111 111</a
                   >
            
                   <a
-                    href="mailto:info@devstudio.com" class="block__contacts--link"
+                    href="mailto:info@devstudio.com" class="block-contact__mail"
                     >info@devstudio.com</a>
               
               </div>

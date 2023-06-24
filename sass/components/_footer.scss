@@ -3,17 +3,23 @@
   padding: 0 15px;
   @include tablet {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 144px;
   }
   @include desktop {
     display: flex;
+    text-align: start;
     justify-content: baseline;
     padding: 60px 0;
+    align-content: center;
   }
 
   &__div {
     margin-bottom: 60px;
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 
   &__logo {
@@ -67,6 +73,9 @@
 
 .join {
   margin-bottom: 60px;
+  @include desktop {
+    margin-left: 70px;
+  }
 
   &__paragraph {
     color: #ffffff;
@@ -106,6 +115,11 @@
 }
 
 .newsletter {
+  @include tablet {
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+  }
   @include desktop {
     margin-left: 78px;
   }
@@ -122,12 +136,18 @@
     margin-bottom: 20px;
     text-align: center;
     display: block;
+    @include desktop {
+      display: flex;
+    }
   }
 
   &__block {
     @include desktop {
       display: flex;
       gap: 12px;
+    }
+    @include tablet {
+      display: block;
     }
   }
 
@@ -140,6 +160,14 @@
     background-color: #2f303a;
     padding-left: 16px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include tablet {
+      display: flex;
+      width: 450px;
+    }
+    @include desktop {
+      width: 358px;
+    }
   }
 
   &__input:focus {
@@ -169,7 +197,9 @@
     margin-top: 20px;
 
     @include desktop {
-      margin-left: 12px;
+      width: 200px;
+      margin-top: 0;
+      margin: auto;
     }
   }
 

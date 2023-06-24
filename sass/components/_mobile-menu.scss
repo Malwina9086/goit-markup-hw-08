@@ -1,5 +1,5 @@
 .menu-container.is-open {
-  transform: translateX(0);
+  transform: translate(0);
 }
 
 .menu-container {
@@ -9,10 +9,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 32px;
-  transform: translateX(100%);
+  transform: translate(100%);
   transition: transform 250ms ease;
   z-index: 2;
+  padding: 48px 40px;
+
   @include tablet {
     display: none;
   }
@@ -35,74 +36,70 @@
   }
 }
 
-.block {
-  display: flex;
-  flex-direction: column;
-  margin-top: 48px;
-  gap: 32px;
-
-  @include tablet {
-    display: none;
-  }
-  @include desktop {
-    display: none;
-  }
-
+.mobile-menu {
   &__link {
-    font-family: "Roboto";
-    color: #212121;
+    font-size: 40px;
+    line-height: 1.17;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
     letter-spacing: 0.02em;
+    color: #212121;
+    display: block;
+    transition: 25oms color cubic-bezier(0.4, 0, 0.2, 1);
+    &--accent {
+      color: #2196f3;
+    }
+  }
+  &__list {
+    &:not(:last-child) {
+      margin-bottom: 36px;
+    }
+  }
+}
+
+.block-contact {
+  margin-top: auto;
+  &__tel {
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    display: block;
+    color: #757575;
+    margin-bottom: 32px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
       color: #2196f3;
     }
   }
-
-  &__contacts {
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-    gap: 32px;
-
-    &__contacts--link {
-      font-family: "Roboto";
-      font-size: 34px;
-      font-weight: 500;
-      letter-spacing: 0.02em;
-      line-height: 1.1;
-      color: #757575;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__contacts--link:hover,
-    &__contacts--link:focus {
+  &__mail {
+    font-size: 24px;
+    color: #757575;
+    margin-bottom: 64px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
       color: #2196f3;
     }
   }
 }
+
 .social-media {
   display: flex;
-  margin-top: 30px;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  gap: 10px;
 
   &__line:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-left: 10px;
     padding-right: 10px;
-    margin-right: 20px;
-    border: 1px solid #21212133;
   }
-
   &__link {
-    font-family: "Roboto";
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    line-height: 1.1;
-
     color: #2196f3;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    padding: 0;
+    transition: $trans-transform;
   }
 }

@@ -3,7 +3,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url();
+    url(../images/image-header-mobilex1.jpg);
   background-position: center;
   background-size: cover;
   max-width: 480px;
@@ -20,7 +20,7 @@
         rgba(47, 48, 58, 0.4) 0%,
         rgba(47, 48, 58, 0.4) 0%
       ),
-      url();
+      url(../images/image-header-mobilex2.jpg);
   }
 
   @include tablet {
@@ -28,7 +28,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url();
+      url(../images/image-header-tabletx1.jpg);
     max-width: 768px;
     height: 400px;
     margin: 0 auto;
@@ -44,7 +44,7 @@
           rgba(47, 48, 58, 0.4) 0%,
           rgba(47, 48, 58, 0.4) 0%
         ),
-        url(../images/effects-back-tablet@2x.jpg);
+        url(../images/image-header-tabletx2.jpg);
     }
   }
 
@@ -55,7 +55,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url();
+      url(../images/image-header.jpg);
     background-position: center;
     background-size: cover;
     max-width: 1600px;
@@ -70,7 +70,7 @@
           rgba(47, 48, 58, 0.4) 0%,
           rgba(47, 48, 58, 0.4) 0%
         ),
-        url();
+        url(../images/image-header-desktopx2.jpg);
     }
   }
 

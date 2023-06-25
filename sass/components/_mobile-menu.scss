@@ -44,15 +44,18 @@
     letter-spacing: 0.02em;
     color: #212121;
     display: block;
+    padding-bottom: 32px;
     transition: 25oms color cubic-bezier(0.4, 0, 0.2, 1);
-    &--accent {
+    &:hover,
+    &:focus {
       color: #2196f3;
     }
-  }
-  &__list {
-    &:not(:last-child) {
+    &__list:not(:last-child) {
       margin-bottom: 36px;
     }
+  }
+  .current {
+    color: #2196f3;
   }
 }
 
@@ -72,10 +75,13 @@
       color: #2196f3;
     }
   }
+  .current {
+    color: #2196f3;
+  }
+
   &__mail {
     font-size: 24px;
     color: #757575;
-    margin-bottom: 64px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
@@ -85,10 +91,12 @@
 }
 
 .social-media {
+  justify-content: flex-start;
   display: flex;
-  gap: 10px;
+  justify-content: space-evenly;
+  margin-top: 64px;
 
-  &__line:not(:last-child) {
+  &__line {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
     padding-left: 10px;
     padding-right: 10px;
@@ -99,7 +107,7 @@
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    padding: 0;
-    transition: $trans-transform;
+    margin: 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }

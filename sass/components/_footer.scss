@@ -4,7 +4,7 @@
   @include tablet {
     display: flex;
     flex-wrap: wrap;
-    gap: 144px;
+    gap: 60px;
   }
   @include desktop {
     display: flex;
@@ -19,6 +19,7 @@
     @include tablet {
       flex-direction: row;
       flex-wrap: wrap;
+      margin-bottom: 0;
     }
   }
 
@@ -73,6 +74,9 @@
 
 .join {
   margin-bottom: 60px;
+  @include tablet {
+    margin-left: 144px;
+  }
   @include desktop {
     margin-left: 70px;
   }
@@ -118,7 +122,7 @@
   @include tablet {
     justify-content: center;
     align-items: center;
-    margin-left: 90px;
+    margin-left: 140px;
   }
   @include desktop {
     margin-left: 78px;

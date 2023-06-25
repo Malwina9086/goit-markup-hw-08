@@ -1,5 +1,4 @@
 .our-clients {
-  display: none;
   padding: 94px 0;
 
   &__h2 {
@@ -14,7 +13,16 @@
 
   &__block {
     display: flex;
+
     gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    @include desktop {
+      flex-wrap: nowrap;
+      display: flex;
+      gap: 30px;
+    }
   }
 
   &__div {

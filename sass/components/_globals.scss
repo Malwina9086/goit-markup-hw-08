@@ -73,5 +73,8 @@ nav {
 }
 
 .work {
-  padding-top: 0;
+  display: none;
+  @include desktop {
+    padding-top: 0;
+  }
 }

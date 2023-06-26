@@ -93,7 +93,8 @@
 .social-media {
   justify-content: flex-start;
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 10px;
   margin-top: 64px;
 
   &__line {

@@ -6,18 +6,20 @@
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
+    align-items: baseline;
     justify-content: space-around;
   }
   @include desktop {
     display: flex;
     text-align: start;
-    justify-content: baseline;
+    align-items: baseline;
     align-content: center;
   }
 
   &__div {
     margin-bottom: 60px;
     @include tablet {
+      align-items: baseline;
       flex-direction: row;
       flex-wrap: wrap;
       margin-bottom: 0;

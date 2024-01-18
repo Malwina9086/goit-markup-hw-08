@@ -3,6 +3,11 @@
   gap: 30px;
   flex-wrap: wrap;
 
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   &__frame {
     width: 370px;
   }
